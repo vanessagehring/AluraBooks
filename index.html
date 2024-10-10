@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -54,7 +56,52 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos Lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="IMG/ApacheKafka (1).png"
+                        alt="Livro sobre Apache Kafka da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Acessibilidade.png"
+                        alt="Livro sobre Acessibilidade da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Angular.png" alt="Livro sobre angular da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Arquitetura.png" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Construct2.png" alt="Livro sobre Construção da Alura Plus">
+                </div>
+                <div class="swiper-slide"><img src="IMG/Gestão.png" alt="primeiro livro sobre a gestão da Alura Plus">
+                </div>
+                <div class="swiper-slide"><img src="IMG/Gestão2.png" alt="SEgundo livro sobre a gestão da Alura Plus">
+                </div>
+                <div class="swiper-slide"><img src="IMG/Guia Front-end.png"
+                        alt="Livro sobre Guia Front-end da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Javascript.png" alt="Livro sobre Javascript da Alura Plus">
+                </div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+        });
+    </script>
 </body>
 
 </html>
