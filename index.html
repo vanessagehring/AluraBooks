@@ -57,6 +57,7 @@
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos Lançamentos</h2>
         <div class="swiper">
+            <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="IMG/ApacheKafka (1).png"
@@ -75,31 +76,28 @@
                         alt="Livro sobre Guia Front-end da Alura Plus"></div>
                 <div class="swiper-slide"><img src="IMG/Javascript.png" alt="Livro sobre Javascript da Alura Plus">
                 </div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                <div class="swiper-slide"><img src="" alt="Livro sobre  da Alura Plus"></div>
-                ...
+                <div class="swiper-slide"><img src="IMG/Liderança.png" alt="Livro sobre Liderança da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/MEAN.png" alt="Livro sobre MEAN da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/MetricasAgeis.png" alt="Livro sobre MetricasAgeis da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Nodejs.png" alt="Livro sobre Nodejs da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Portugol.png" alt="Livro sobre Portugol da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/ReactNative.png" alt="Livro sobre ReactNative da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/Tuning.png" alt="Livro sobre Tuning da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/UX.png" alt="Livro sobre UX da Alura Plus"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            speed: 400,
-            spaceBetween: 100,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el:'.swiper-pagination',
+                type: 'bullets',
+            },
         });
     </script>
 </body>
