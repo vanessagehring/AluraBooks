@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -78,16 +78,35 @@
                 </div>
                 <div class="swiper-slide"><img src="IMG/Liderança.png" alt="Livro sobre Liderança da Alura Plus"></div>
                 <div class="swiper-slide"><img src="IMG/MEAN.png" alt="Livro sobre MEAN da Alura Plus"></div>
-                <div class="swiper-slide"><img src="IMG/MetricasAgeis.png" alt="Livro sobre MetricasAgeis da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/MetricasAgeis.png"
+                        alt="Livro sobre MetricasAgeis da Alura Plus"></div>
                 <div class="swiper-slide"><img src="IMG/Nodejs.png" alt="Livro sobre Nodejs da Alura Plus"></div>
                 <div class="swiper-slide"><img src="IMG/Portugol.png" alt="Livro sobre Portugol da Alura Plus"></div>
-                <div class="swiper-slide"><img src="IMG/ReactNative.png" alt="Livro sobre ReactNative da Alura Plus"></div>
+                <div class="swiper-slide"><img src="IMG/ReactNative.png" alt="Livro sobre ReactNative da Alura Plus">
+                </div>
                 <div class="swiper-slide"><img src="IMG/Tuning.png" alt="Livro sobre Tuning da Alura Plus"></div>
                 <div class="swiper-slide"><img src="IMG/UX.png" alt="Livro sobre UX da Alura Plus"></div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+        <div class="card">
+            <div class="card-descrição">
+                <div class="descrição">
+                    <h3 class="descrição-titulo">Talvez você se interesse por...</h3>
+                    <h2 class="descrição-titulo-livro">Angular e Firebase</h2>
+                    <p class="descrição-texto">Construção de aplicativo integrada ao Google</p>
+                    </div>
+                    <img src="IMG/Angular1.png" class="descrição-imagem">
+                </div>
+                <div class="card-botoes">
+                    <ul class="botoes">
+                        <li class="botoes-item"><img src="IMG/favoritos.png" alt="Favoritar livro"></li>
+                        <li class="botoes-item"><img src="IMG/sacola.png" alt="Adicionar à sacola"></li>
+                    </ul>
+                    <a href="#" class="botoes-ancora">Saiba mais</a>
+                </div>
+            </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -95,7 +114,7 @@
             spaceBetween: 10,
             slidesPerView: 3,
             pagination: {
-                el:'.swiper-pagination',
+                el: '.swiper-pagination',
                 type: 'bullets',
             },
         });

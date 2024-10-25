@@ -17,3 +17,8 @@
     position: initial;
     margin: o.5em 0;
 }
+.card-descrição{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
